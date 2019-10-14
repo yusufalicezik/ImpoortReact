@@ -20,7 +20,9 @@ export default class LoginForm extends Component {
             <TextField placeholderText="E mail" isSecure={false}/>
             <TextField placeholderText="Password" isSecure={false}/>
             <View style={styles.buttonView}>
-              <MButton buttonText="Login"></MButton>
+              <MButton buttonText="Login" mOnPress={()=>{
+                this.props.navigation.navigate('Home');
+                }}></MButton>
             </View>
             <View style={styles.bottomView}>
               <TouchableOpacity onPress={
